@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Reload a driver and restart a netctl profile.
+#
+
+driver="rtl8723be"
+netctl_profile="example-profile"
+
+modprobe -r "$driver" && modprobe "$driver" && netctl restart "$netctl_profile"

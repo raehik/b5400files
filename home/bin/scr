@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+# Turn the screen off.
+#
+
+xset dpms force off
